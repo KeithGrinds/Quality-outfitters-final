@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Quality Outfitters - Premium suits, ties, shoes, and formal wear.">
+    <title>Quality Outfitters</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+    <!-- Glowing Cursor -->
+    <div id="cursor" aria-hidden="true"></div>
+
+    <!-- Header / Navigation -->
+    <header>
+        <div class="logo">Quality Outfitters</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" aria-label="Toggle Navigation">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <canvas id="smokeCanvas" aria-hidden="true"></canvas>
+        <div class="hero-content" data-aos="fade-up">
+            <h1>Elegance Redefined</h1>
+            <p>Premium suits, ties, shoes, and formal wear crafted for you.</p>
+            <a href="#products" class="btn-glow">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <h2 data-aos="fade-up">Our Collection</h2>
+        <div class="product-grid">
+            <div class="product-card" data-aos="fade-up">
+                <img src="images/suit1.jpg" alt="Classic Black Suit">
+                <div class="overlay">
+                    <h3>Classic Black Suit</h3>
+                    <button class="btn-glow">Quick View</button>
+                </div>
+            </div>
+            <div class="product-card" data-aos="fade-up">
+                <img src="images/tie1.jpg" alt="Luxury Silk Tie">
+                <div class="overlay">
+                    <h3>Luxury Silk Tie</h3>
+                    <button class="btn-glow">Quick View</button>
+                </div>
+            </div>
+            <div class="product-card" data-aos="fade-up">
+                <img src="images/shoes1.jpg" alt="Elegant Leather Shoes">
+                <div class="overlay">
+                    <h3>Elegant Leather Shoes</h3>
+                    <button class="btn-glow">Quick View</button>
+                </div>
+            </div>
+            <div class="product-card" data-aos="fade-up">
+                <img src="images/suit2.jpg" alt="Modern Grey Suit">
+                <div class="overlay">
+                    <h3>Modern Grey Suit</h3>
+                    <button class="btn-glow">Quick View</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 data-aos="fade-up">Contact Us</h2>
+        <form aria-label="Contact Form" data-aos="fade-up">
+            <input type="text" name="name" placeholder="Your Name" aria-label="Name" required>
+            <input type="email" name="email" placeholder="Your Email" aria-label="Email" required>
+            <textarea name="message" placeholder="Your Message" aria-label="Message" required></textarea>
+            <button type="submit" class="btn-glow">Send Message</button>
+        </form>
+        <div class="socials" data-aos="fade-up">
+            <a href="https://wa.me/1234567890" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://twitter.com" aria-label="Twitter" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
+            <a href="https://facebook.com" aria-label="Facebook" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
+            <a href="https://linkedin.com" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Quality Outfitters. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+    </script>
+</body>
+</html>
